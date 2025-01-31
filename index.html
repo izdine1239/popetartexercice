@@ -54,6 +54,14 @@
             width: 30%;
             background: #f8f8f8;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .promotion, .testimonials, .graphics {
+            background: #ddd;
+            padding: 10px;
+            border-radius: 5px;
         }
         .newsletter {
             background: #ddd;
@@ -97,8 +105,18 @@
             </section>
             
             <aside class="sidebar">
-                <h2>Informations Supplémentaires</h2>
-                <p>Zone réservée aux promotions, témoignages clients, ou éléments graphiques.</p>
+                <div class="promotion">
+                    <h2>Promotions</h2>
+                    <p>Offres spéciales sur les équipements.</p>
+                </div>
+                <div class="testimonials">
+                    <h2>Témoignages Clients</h2>
+                    <p>Avis et expériences des utilisateurs.</p>
+                </div>
+                <div class="graphics">
+                    <h2>Éléments Graphiques</h2>
+                    <p>Visuels et médias interactifs.</p>
+                </div>
             </aside>
         </div>
         
