@@ -3,72 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop&Art - Maquette</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Wireframe - Endurance Extrême</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header, footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .main, .sidebar {
+            padding: 20px;
+            background: #eaeaea;
+            min-height: 300px;
+        }
+        .main {
+            width: 65%;
+        }
+        .sidebar {
+            width: 30%;
+        }
+        .newsletter {
+            background: #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #333;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <h1>Pop&Art</h1>
+    <div class="container">
+        <header>
+            <h1>Endurance Extrême - Wireframe</h1>
+        </header>
+        
+        <div class="content">
+            <section class="main">
+                <h2>Article Principal</h2>
+                <p>Zone dédiée à la présentation du produit phare.</p>
+            </section>
+            
+            <aside class="sidebar">
+                <h2>Informations Supplémentaires</h2>
+                <p>Zone réservée aux promotions, témoignages clients, ou éléments graphiques.</p>
+            </aside>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#products">Produits</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Section À propos -->
-    <section id="about">
-        <h2>À propos de Pop&Art</h2>
-        <p>Pop&Art est une entreprise de création artisanale d'objets uniques inspirés de la pop culture, réalisée avec passion à Lyon. Découvrez nos collections limitées d'objets décoratifs.</p>
-    </section>
-
-    <!-- Section Produits (Wireframe pour les produits best-sellers) -->
-    <section id="products">
-        <h2>Nos Best-Sellers</h2>
-        <div class="product-list">
-            <div class="product">
-                <div class="image-placeholder">Image Produit 1</div>
-                <h3>Produit 1</h3>
-                <p>Description rapide du produit 1.</p>
-            </div>
-            <div class="product">
-                <div class="image-placeholder">Image Produit 2</div>
-                <h3>Produit 2</h3>
-                <p>Description rapide du produit 2.</p>
-            </div>
-            <div class="product">
-                <div class="image-placeholder">Image Produit 3</div>
-                <h3>Produit 3</h3>
-                <p>Description rapide du produit 3.</p>
-            </div>
+        
+        <div class="newsletter">
+            <h2>Inscription à la Newsletter</h2>
+            <form action="#" method="post">
+                <input type="text" name="prenom" placeholder="Prénom" required>
+                <input type="text" name="nom" placeholder="Nom" required>
+                <input type="email" name="email" placeholder="Adresse e-mail" required>
+                <button type="submit">S'inscrire</button>
+            </form>
         </div>
-    </section>
-
-    <!-- Section Formulaire de Contact -->
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <form action="#" method="post">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2023 Pop&Art. Tous droits réservés.</p>
-    </footer>
+        
+        <footer>
+            <p>© 2024 Endurance Extrême - Tous droits réservés</p>
+        </footer>
+    </div>
 </body>
 </html>
