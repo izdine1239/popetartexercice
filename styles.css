@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins',roboto thin;
 }
 
 body {
     background-color: #f4f4f4;
-    color: #333;
+    color: #ff3131;
     display: flex;
     flex-direction: column;
     align-items: center;
